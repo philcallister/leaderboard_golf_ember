@@ -1,0 +1,6 @@
+<h2>{{title}}</h2>
+<ul>
+  {{#each golf as |g|}}
+    <li>{{g.name}} | {{g.description}}: {{#link-to g.type g.id}}Show{{/link-to}}</li>
+  {{/each}}
+</ul>

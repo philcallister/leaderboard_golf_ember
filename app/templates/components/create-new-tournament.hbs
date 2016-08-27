@@ -1,0 +1,11 @@
+<h3>Create Tournament</h3>
+
+<form id="create_tournament">
+  <p>
+    {{input value=add_tournament.name placeholder="Name"}}
+    {{input value=add_tournament.description placeholder="Description"}}
+  </p>
+  <p>
+    <button {{action "createTournament" add_tournament}}>Create</button>
+  </p>
+</form>
